@@ -6,10 +6,11 @@ function animalQuery() {
 
 
     $.ajax({
-        url: queryURL,
-        method: "GET"
+      url: queryURL,
+      type: "get",
+      dataType: "jsonp",
       }).then(function(response) {
-            console.log(response);
+            console.log('cry', response);
       });
     
 };
