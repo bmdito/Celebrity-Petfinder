@@ -5,6 +5,8 @@
     height: 200px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    
+    margin-bottom:2%;
   }
   /* This container is needed to position the front and back side */
   .flip-card-inner {
@@ -25,6 +27,8 @@
     width: 100%;
     height: 100%; 
     backface-visibility: hidden;
+    border-radius:20px;
+    margin-bottom:2%;
   }
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
@@ -42,6 +46,7 @@
     display:flex;
     justify-content:space-around;
     align-items:center;
+    
   }
   
   
