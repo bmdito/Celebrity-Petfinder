@@ -37,7 +37,7 @@
   }
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
+    background-color: white;
     color: white;
     transform: rotateY(180deg);
   }
@@ -46,9 +46,43 @@
     display:flex;
     justify-content:space-around;
     align-items:center;
-    
+    margin-top:2%;
+  }
+
+  body {
+    background-color:#07DADA;
   }
   
+  .jumbo-style {
+    border-radius:25px;
+    margin-top:3%;
+  }
+
+  .nav-style {
+    width:100%;
+    
+  }
+
+  .directions {
+    background-color: white;
+    border-radius:25px;
+    margin-top:3%;
+    border:2px solid #F9ABCC;
+    font-size: 25px;
+    color:#AE51BB;
+    font-weight:bold;
+
+  }
+
+  #direct {
+    color:Blue;
+  }
+  .pet {
+    background-color: #F9ABCC !important;
+    color:#AE51BB !important;
+    font-weight:bold;
+    
+  }
   
   
   Collapse 
