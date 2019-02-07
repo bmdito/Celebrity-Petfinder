@@ -3,7 +3,7 @@
     background-color: transparent;
     width: 300px;
     height: 200px;
-    border: 1px solid #f1f1f1;
+    
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     
     margin-bottom:2%;
@@ -37,8 +37,8 @@
   }
   /* Style the back side */
   .flip-card-back {
-    background-color: white;
-    color: white;
+    background-color: lightcyan;
+    color: fuchsia;
     transform: rotateY(180deg);
   }
 
@@ -46,7 +46,7 @@
     display:flex;
     justify-content:space-around;
     align-items:center;
-    margin-top:2%;
+    margin-top:1%;
   }
 
   body {
@@ -82,6 +82,14 @@
     color:#AE51BB !important;
     font-weight:bold;
     
+  }
+
+  .petdiv {
+    background-color:white;
+    font-size: 20px;
+    padding:2%;
+    color:blue;
+    margin:1%;
   }
   
   
