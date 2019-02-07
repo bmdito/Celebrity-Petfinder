@@ -2,18 +2,53 @@ console.log("hello world");
 
 function animalQuery() {
 
-    var queryURL = "https://cors-anywhere.herokuapp.com/http://api.petfinder.com/pet.find?format=json&key=890ea03f874b500ce1b9db838148bb69&animal=dog&count=10&breed="+BREED+ "location="+ZIPCODE;
+    var queryURL = "http://api.petfinder.com/pet.find?format=json&key=890ea03f874b500ce1b9db838148bb69&animal=dog&breed="+thebreed+"&location=94530";
+
 
 
     $.ajax({
       url: queryURL,
       type: "get",
-      dataType: "json",
+      dataType: "jsonp",
       }).then(function(response) {
-            console.log('cry', response);
+            console.log('response', response);
+            // $("#testing").text(JSON.stringify(response));
+            console.log(response);
+
+
+            $("body").on("click", ".pet", function(){
+
+                  console.log("clicked find pet");
+                  var thebreed = $(this).attr("data-breed");
+                  console.log(thebreed);
+                  // petAge.attr("id","petInfo");
+                  // petAge.text(JSON.stringify(response.petfinder.pets.pet[n]));
+                  // console.log(petAge);
+                  
+            });
+                  
+            //       var petAge = $("<div>");
+            //       petAge.attr("id","petInfo");
+            //       petAge.addClass("petdiv");
+            //       petAge.text(JSON.stringify(response.petfinder.pets.pet[n].age.$t));
+            //       console.log(petAge);
+            //       $("#pet-results").append(petAge);
+                  
+            //       // var eachPet = $("<div>");
+            //       // eachPet.attr("id","petInfo");
+            //       // eachPet.text(JSON.stringify(response.petfinder.pets.pet[n]));
+            //       // console.log(petAge);
+            //       // $("#testing").append(petAge);
+                  
+            // }
       });
-    
+
+            
+      // });
+   
 };
 
-animalQuery();
 
+
+// var location = "https://www.petfinder.com/member/us/ca/berkeley/home-at-last-animal-rescue"+ shelter     ID;          
+animalQuery();
