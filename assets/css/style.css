@@ -1,10 +1,11 @@
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    width: 310px;
+    height: 310px;
+    border: 2px solid #f1f1f1;
+    border-radius:20px;
+    perspective: 1000px; Remove this if you don't want the 3D effect
     
     margin-bottom:2%;
   }
@@ -14,6 +15,7 @@
     width: 100%;
     height: 100%;
     text-align: center;
+    border-radius:20px;
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
@@ -37,9 +39,10 @@
   }
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
+    background-color: #fcc650;
     color: white;
     transform: rotateY(180deg);
+    overflow-y: scroll;
   }
 
   .celebs {
@@ -48,12 +51,29 @@
     align-items:center;
     
   }
+
+  .celebs img{
+    border-radius:20px;
+  }
   
+header{
+  background-color: #f9abcc;
+}
   
+body{
+  background-color: #07dada;
+}
   
-  Collapse 
-  Message Input
+  h1 {
+  text-align: center;
+  color: white;
+  font-style: thin;
+}
   
+
+  #ae51bb
+  #fcc650
+  #f9abcc
+  #07dada
+  #ff015a
   
-  Message Baldric, Belinda Novoa
-  Nice job!
