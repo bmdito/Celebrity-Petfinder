@@ -42,6 +42,7 @@ $("body").on("click", ".pet" ,function(){
                           console.log(petAge);
                           
                           petAge.append("<p>"+"Name: "+quick.name.$t+"</p>");
+                          petAge.append("<p>"+"Sex: "+quick.sex.$t+"</p>");
                           petAge.append("<p>"+"Info: "+quick.description.$t+"</p>");
                           
                           var imageDiv = $("<div style='width:150px; height:150px'>");
@@ -82,9 +83,5 @@ function returnToCeleb (){
 
 $("body").on("click", "#goBack", function(){
       returnToCeleb();
-})
-
-
-
-// var location = "https://www.petfinder.com/member/us/ca/berkeley/home-at-last-animal-rescue"+ shelter     ID;          
+});
 
