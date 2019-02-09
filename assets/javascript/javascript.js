@@ -1,6 +1,13 @@
 
 $(document).ready(function(){
 
+    $("#zipcode").on("click", function() {
+        var zipcode  =  $("#character-input").val().trim();
+        console.log(zipcode);
+        sessionStorage.setItem("zipcode", zipcode);
+    });
+ 
+        var location = sessionStorage.getItem("zipcode");
 
 
       $("body").on("click", ".pet" ,function(){
@@ -18,7 +25,7 @@ $(document).ready(function(){
       
             function animalQuery() {
       
-                  var queryURL = "https://api.petfinder.com/pet.find?format=json&key=890ea03f874b500ce1b9db838148bb69&animal=dog&breed="+dogBreed+"&location=94954";
+                  var queryURL = "https://api.petfinder.com/pet.find?format=json&key=890ea03f874b500ce1b9db838148bb69&animal=dog&breed="+dogBreed+"&location="+location;
               
               
               
