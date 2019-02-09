@@ -85,9 +85,3 @@ $("body").on("click", "#goBack", function(){
       returnToCeleb();
 });
 
-
-
-
-
-// var location = "https://www.petfinder.com/member/us/ca/berkeley/home-at-last-animal-rescue"+ shelter     ID;          
-
